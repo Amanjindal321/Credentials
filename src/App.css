@@ -36,3 +36,111 @@
     transform: rotate(360deg);
   }
 }
+
+/* App.css - Place in src/App.css */
+
+.login-signup-container {
+  max-width: 400px;
+  margin: 80px auto;
+  background: black;
+  padding: 40px 30px 30px;
+  border-radius: 18px;
+  box-shadow: 0 8px 32px rgba(30, 144, 255, 0.1), 0 1.5px 3px #5c2dd1;
+  position: relative;
+  overflow: hidden;
+}
+
+.toggle-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 28px;
+  background: #eaf4fd;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.toggle-btn {
+  flex: 1;
+  padding: 14px 0;
+  border: none;
+  font-size: 1.11rem;
+  background: transparent;
+  color: #444;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+  outline: none;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.toggle-btn.selected {
+  background: #1e90ff;
+  color: #fff;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+input[type="email"],
+input[type="password"],
+input[type="text"] {
+  width: 100%;
+  background: white;
+  outline: none;
+  border: 1.5px solid black;
+  padding: 12px 11px;
+  border-radius: 7px;
+  font-size: 1rem;
+  transition: border 0.2s;
+  box-sizing: border-box;
+}
+
+input:focus {
+  border-color: black;
+  
+}
+
+label {
+  font-size: 1rem;
+  color: #227fce;
+  margin-bottom: 6px;
+  font-weight: 500;
+}
+
+  button.submit-btn {
+    background: linear-gradient(90deg, #1e90ff 40%, #257dd4 100%);
+    color: #fff;
+    padding: 7px 20px;
+    font-size: 0.98rem;
+    min-width: 90px;
+    border: none;
+    border-radius: 7px;
+    margin-top: 8px;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 2px 8px #a6dafb55;
+    transition: background 0.18s;
+  }
+
+button.submit-btn:hover {
+  background: linear-gradient(90deg, #257dd4 40%, #1e90ff 100%);
+}
+
+form h2 {
+  color: #1e22ff;
+  margin-bottom: 10px;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #065288 0%, #1e5790 100%);
+  /* Or try this for slightly more blue: */
+  /* background: linear-gradient(120deg, #dbeafe 0%, #b3e0ff 100%); */
+  font-family: 'Segoe UI', 'Arial', sans-serif;
+  transition: background 0.3s;
+}
