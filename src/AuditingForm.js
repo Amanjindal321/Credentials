@@ -611,31 +611,31 @@ export default function AuditingForm() {
           }}
         >
           <div>
-            <label style={labelStyle}>QA Email</label>
+            <label style={labelStyle}>Zone Number</label>
             <input
               type="email"
               name="qaEmail"
               value={form.qaEmail}
               onChange={handleChange}
-              placeholder="Enter QA Email"
+              placeholder="Enter Zone Number"
               style={inputStyle}
             />
           </div>
 
           <div>
-            <label style={labelStyle}>QA Name</label>
+            <label style={labelStyle}>Rep Name</label>
             <input
               type="text"
               name="qaName"
               value={form.qaName}
               onChange={handleChange}
-              placeholder="Enter QA Name"
+              placeholder="Enter Rep Name"
               style={inputStyle}
             />
           </div>
 
           <div>
-            <label style={labelStyle}>Agent Email</label>
+            <label style={labelStyle}>Rep Email</label>
             <select
               name="agentEmail"
               value={form.agentEmail}
@@ -649,19 +649,31 @@ export default function AuditingForm() {
           </div>
 
           <div>
-            <label style={labelStyle}>Agent Name</label>
+            <label style={labelStyle}>Rep Account Number</label>
             <input
               type="text"
-              name="agentName"
-              value={form.agentName}
+              name="accountNumber"
+              value={form.accountNumber}
               onChange={handleChange}
-              placeholder="Enter Agent Name"
+              placeholder="Enter Account Number"
               style={inputStyle}
             />
           </div>
 
           <div>
-            <label style={labelStyle}>Audit Date</label>
+            <label style={labelStyle}>SL Name</label>
+            <input
+              type="text"
+              name="agentName"
+              value={form.agentName}
+              onChange={handleChange}
+              placeholder="Enter SL Name"
+              style={inputStyle}
+            />
+          </div>
+
+          <div>
+            <label style={labelStyle}>Rep DOB</label>
             <input
               type="date"
               name="auditDate"
@@ -672,13 +684,13 @@ export default function AuditingForm() {
           </div>
 
           <div>
-            <label style={labelStyle}>Agent ID</label>
+            <label style={labelStyle}>Coord Number</label>
             <input
               type="text"
               name="agentID"
               value={form.agentID}
               onChange={handleChange}
-              placeholder="Enter Agent ID"
+              placeholder="Enter Coord Number"
               style={inputStyle}
             />
           </div>
@@ -696,19 +708,19 @@ export default function AuditingForm() {
           </div>
 
           <div>
-            <label style={labelStyle}>SL Name</label>
+            <label style={labelStyle}>ZM Name</label>
             <input
               type="text"
               name="slName"
               value={form.tlName}
               onChange={handleChange}
-              placeholder="Enter SL Name"
+              placeholder="Enter ZM Name"
               style={inputStyle}
             />
           </div>
 
           <div>
-            <label style={labelStyle}>Market</label>
+            <label style={labelStyle}>Country</label>
             <select
               name="market"
               value={form.market}
@@ -722,8 +734,8 @@ export default function AuditingForm() {
             </select>
           </div>
 
-          <div>
-            <label style={labelStyle}>Account Number</label>
+          {/* <div>
+            <label style={labelStyle}>Rep Account Number</label>
             <input
               type="text"
               name="accountNumber"
@@ -732,12 +744,12 @@ export default function AuditingForm() {
               placeholder="Enter Account Number"
               style={inputStyle}
             />
-          </div>
+          </div> */}
 
           
 
           <div>
-            <label style={labelStyle}>Process</label>
+            <label style={labelStyle}>Request type</label>
             <select
               name="process"
               value={form.process}

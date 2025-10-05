@@ -138,7 +138,7 @@ form h2 {
 }
 body {
   min-height: 100vh;
-  background: linear-gradient(135deg, #065288 0%, #1e5790 100%);
+  background: linear-gradient(135deg, #88065a 0%, #901e46 100%);
   /* Or try this for slightly more blue: */
   /* background: linear-gradient(120deg, #dbeafe 0%, #b3e0ff 100%); */
   font-family: 'Segoe UI', 'Arial', sans-serif;
