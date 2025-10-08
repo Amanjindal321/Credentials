@@ -598,7 +598,7 @@ export default function AuditingForm() {
           marginBottom: "25px",
         }}
       >
-        Audit Details
+        Allocation Form
       </h2>
 
       <form onSubmit={handleSubmit}>
@@ -611,25 +611,25 @@ export default function AuditingForm() {
           }}
         >
           <div>
-            <label style={labelStyle}>Zone Number</label>
+            <label style={labelStyle}>Current Zone Number</label>
             <input
               type="email"
               name="qaEmail"
               value={form.qaEmail}
               onChange={handleChange}
-              placeholder="Enter Zone Number"
+              placeholder="Enter Current Zone Number"
               style={inputStyle}
             />
           </div>
 
           <div>
-            <label style={labelStyle}>Rep Name</label>
+            <label style={labelStyle}>Rep Account Number</label>
             <input
               type="text"
               name="qaName"
               value={form.qaName}
               onChange={handleChange}
-              placeholder="Enter Rep Name"
+              placeholder="Enter Rep Account Number"
               style={inputStyle}
             />
           </div>
@@ -648,7 +648,7 @@ export default function AuditingForm() {
             </select>
           </div>
 
-          <div>
+          {/* <div>
             <label style={labelStyle}>Rep Account Number</label>
             <input
               type="text"
@@ -658,7 +658,7 @@ export default function AuditingForm() {
               placeholder="Enter Account Number"
               style={inputStyle}
             />
-          </div>
+          </div> */}
 
           <div>
             <label style={labelStyle}>SL Name</label>
@@ -695,7 +695,7 @@ export default function AuditingForm() {
             />
           </div>
 
-          <div>
+          {/* <div>
             <label style={labelStyle}>SL Email</label>
             <input
               type="email"
@@ -705,16 +705,16 @@ export default function AuditingForm() {
               placeholder="Enter SL Email"
               style={inputStyle}
             />
-          </div>
+          </div> */}
 
           <div>
-            <label style={labelStyle}>ZM Name</label>
+            <label style={labelStyle}>New Zone Number</label>
             <input
               type="text"
               name="slName"
               value={form.tlName}
               onChange={handleChange}
-              placeholder="Enter ZM Name"
+              placeholder="Enter Zone Number"
               style={inputStyle}
             />
           </div>
@@ -757,18 +757,18 @@ export default function AuditingForm() {
               style={inputStyle}
             >
               <option value="">Find Items</option>
-              <option value="Sales">Sales</option>
-              <option value="Support">Support</option>
+              <option value="Sales">InterZone Change</option>
+              <option value="Support">WithIn Zone Change</option>
             </select>
           </div>
 
           <div style={{ gridColumn: "1 / span 3" }}>
-            <label style={labelStyle}>QA Comments</label>
+            <label style={labelStyle}>ZM Remarks</label>
             <textarea
               name="qaComment"
               value={form.qaComment}
               onChange={handleChange}
-              placeholder="Enter QA Comments"
+              placeholder="Enter ZM Remarks"
               rows={4}
               style={{
                 ...inputStyle,
@@ -788,11 +788,11 @@ export default function AuditingForm() {
             marginTop: "20px",
           }}
         >
-          <button type="button" style={buttonStyleSecondary}>
+          {/* <button type="button" style={buttonStyleSecondary}>
             Next
-          </button>
+          </button> */}
           <button type="submit" style={buttonStylePrimary}>
-            Validate
+            Submit
           </button>
         </div>
       </form>
